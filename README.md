@@ -1,6 +1,7 @@
 # Grocery Inventory
 ## The way to avoid Stress Shopping and over stocking
 
+![alt_text](https://github.com/dvaita/GroceryInventory/blob/master/app/src/main/res/drawable/additem.png)
 
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
