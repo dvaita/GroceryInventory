@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequirementActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="5dp"
+        android:id="@+id/l1">
+    <TextView
+        android:id="@+id/textFitness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:text="REQUIREMENT"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toEndOf="@+id/textFitness"
+        android:text="INVENTORY"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/l1"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/groceryTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.925"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Grocery"
+                android:textColor="#000"
+                android:textSize="13sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/cleaningTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.925"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Cleanings"
+                android:textColor="#000"
+                android:textSize="13sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/eatableTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="13sp"
+                android:text="Eatable"
+                android:layout_weight="1.15"
+                android:textColor="#000"
+                android:background="?android:attr/selectableItemBackground"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/medicsTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:text="Medics"
+                android:layout_weight="1.05"
+                android:textColor="#000"
+                android:background="?android:attr/selectableItemBackground"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/otherTab"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:text="OTHER"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="0.95"
+                android:textColor="#000"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/l2"
+            android:id="@+id/l3"
+            android:weightSum="5"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/groceryImg"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.925"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/cleaningImg"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.925"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/eatableImg"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.15"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/medicsImg"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.05"
+                tools:ignore="ContentDescription" />
+            <ImageView
+                android:id="@+id/otherImg"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.95"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/l3">
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:listSelector="#D6D6D6"/>
+            <Button
+                android:id="@+id/addItem"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/additem"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>
